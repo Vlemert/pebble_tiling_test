@@ -1,0 +1,11 @@
+
+{"friendlyVersion": "V1_0",
+ "versionDefName": "APP_RESOURCES",
+ "media": [
+	   {
+	    "type":"png",
+	    "defName":"TILE",
+	    "file":"images/tile.png"
+	   }
+	  ]
+}

@@ -1,0 +1,399 @@
+Archive member included because of file (symbol)
+
+/home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test/lib/libpebble.a(tmpE96Sgtpebble_os.o)
+                              src/tiling_test.c.1.o (app_event_loop)
+/home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+                              src/tiling_test.c.1.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+IMG_TILE            0x44              src/tiling_test.c.1.o
+layer               0x28              src/tiling_test.c.1.o
+window              0x58              src/tiling_test.c.1.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+APP              0x00000000         0x00006000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+LOAD /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+LOAD src/tiling_test.c.1.o
+LOAD /home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test/lib/libpebble.a
+START GROUP
+LOAD /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a
+LOAD /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a
+END GROUP
+LOAD /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+LOAD /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.header         0x00000000       0x7c
+ *(.pbl_header)
+ .pbl_header    0x00000000       0x7c src/tiling_test.c.1.o
+                0x00000000                __pbl_app_info
+
+.text           0x0000007c      0xd48
+ *(.text)
+ .text          0x0000007c        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .text          0x0000007c       0x68 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .text          0x000000e4      0x154 src/tiling_test.c.1.o
+                0x000000e4                mainwindow_layer_draw
+                0x0000012c                handle_init
+                0x000001d4                handle_deinit
+                0x000001fc                pbl_main
+ .text          0x00000238      0xb8c /home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test/lib/libpebble.a(tmpE96Sgtpebble_os.o)
+                0x00000238                animation_init
+                0x00000244                animation_set_delay
+                0x00000250                animation_set_duration
+                0x0000025c                animation_set_curve
+                0x00000268                animation_set_handlers
+                0x00000274                animation_set_implementation
+                0x00000280                animation_get_context
+                0x0000028c                animation_schedule
+                0x00000298                animation_unschedule
+                0x000002a4                animation_unschedule_all
+                0x000002b0                animation_is_scheduled
+                0x000002bc                app_timer_send_event
+                0x000002c8                app_timer_cancel_event
+                0x000002d4                app_event_loop
+                0x000002e0                bmp_init_container
+                0x000002ec                bmp_deinit_container
+                0x000002f8                cos_lookup
+                0x00000304                fonts_get_system_font
+                0x00000310                fonts_load_custom_font
+                0x0000031c                fonts_unload_custom_font
+                0x00000328                graphics_context_set_stroke_color
+                0x00000334                graphics_context_set_fill_color
+                0x00000340                graphics_context_set_text_color
+                0x0000034c                graphics_context_set_compositing_mode
+                0x00000358                graphics_draw_pixel
+                0x00000364                graphics_draw_line
+                0x00000370                graphics_fill_rect
+                0x0000037c                graphics_draw_circle
+                0x00000388                graphics_fill_circle
+                0x00000394                graphics_draw_round_rect
+                0x000003a0                get_time
+                0x000003ac                gpath_init
+                0x000003b8                gpath_move_to
+                0x000003c4                gpath_rotate_to
+                0x000003d0                gpath_draw_outline
+                0x000003dc                gpath_draw_filled
+                0x000003e8                grect_center_point
+                0x000003f4                layer_mark_dirty
+                0x00000400                layer_remove_from_parent
+                0x0000040c                layer_add_child
+                0x00000418                layer_get_frame
+                0x00000424                layer_set_frame
+                0x00000430                layer_set_hidden
+                0x0000043c                layer_init
+                0x00000448                light_enable
+                0x00000454                light_enable_interaction
+                0x00000460                psleep
+                0x0000046c                resource_init_current_app
+                0x00000478                resource_get_handle
+                0x00000484                resource_load
+                0x00000490                resource_load_byte_range
+                0x0000049c                resource_size
+                0x000004a8                rotbmp_deinit_container
+                0x000004b4                rotbmp_init_container
+                0x000004c0                rotbmp_pair_deinit_container
+                0x000004cc                rotbmp_pair_init_container
+                0x000004d8                rotbmp_pair_layer_set_src_ic
+                0x000004e4                rotbmp_pair_layer_set_angle
+                0x000004f0                window_init
+                0x000004fc                window_stack_push
+                0x00000508                window_set_click_config_provider
+                0x00000514                window_set_background_color
+                0x00000520                window_render
+                0x0000052c                window_set_fullscreen
+                0x00000538                sin_lookup
+                0x00000544                string_format_time
+                0x00000550                text_layer_init
+                0x0000055c                text_layer_get_text
+                0x00000568                text_layer_set_text
+                0x00000574                text_layer_set_font
+                0x00000580                text_layer_set_text_color
+                0x0000058c                text_layer_set_background_color
+                0x00000598                vibes_double_pulse
+                0x000005a4                vibes_enqueue_custom_pattern
+                0x000005b0                vibes_long_pulse
+                0x000005bc                vibes_short_pulse
+                0x000005c8                app_get_current_graphics_context
+                0x000005d4                clock_is_24h_style
+                0x000005e0                property_animation_init_layer_frame
+                0x000005ec                text_layer_set_text_alignment
+                0x000005f8                graphics_draw_bitmap_in_rect
+                0x00000604                graphics_text_draw
+                0x00000610                layer_set_bounds
+                0x0000061c                layer_get_bounds
+                0x00000628                layer_set_update_proc
+                0x00000634                layer_get_window
+                0x00000640                layer_remove_child_layers
+                0x0000064c                layer_insert_below_sibling
+                0x00000658                layer_insert_above_sibling
+                0x00000664                layer_get_hidden
+                0x00000670                layer_set_clips
+                0x0000067c                layer_get_clips
+                0x00000688                text_layer_get_max_used_size
+                0x00000694                text_layer_set_size
+                0x000006a0                text_layer_set_overflow_mode
+                0x000006ac                graphics_text_layout_get_max_used_size
+                0x000006b8                inverter_layer_init
+                0x000006c4                bitmap_layer_init
+                0x000006d0                bitmap_layer_set_bitmap
+                0x000006dc                bitmap_layer_set_alignment
+                0x000006e8                bitmap_layer_set_background_color
+                0x000006f4                bitmap_layer_set_compositing_mode
+                0x00000700                heap_bitmap_init
+                0x0000070c                heap_bitmap_deinit
+                0x00000718                click_recognizer_get_button_id
+                0x00000724                click_number_of_clicks_counted
+                0x00000730                menu_cell_basic_draw
+                0x0000073c                menu_cell_title_draw
+                0x00000748                menu_cell_basic_header_draw
+                0x00000754                menu_layer_init
+                0x00000760                menu_layer_get_layer
+                0x0000076c                menu_layer_set_callbacks
+                0x00000778                menu_layer_set_click_config_onto_window
+                0x00000784                menu_layer_set_selected_next
+                0x00000790                menu_layer_set_selected_index
+                0x0000079c                menu_layer_reload_data
+                0x000007a8                menu_index_compare
+                0x000007b4                scroll_layer_init
+                0x000007c0                scroll_layer_add_child
+                0x000007cc                scroll_layer_set_click_config_onto_window
+                0x000007d8                scroll_layer_set_callbacks
+                0x000007e4                scroll_layer_set_context
+                0x000007f0                scroll_layer_set_content_offset
+                0x000007fc                scroll_layer_get_content_offset
+                0x00000808                scroll_layer_set_content_size
+                0x00000814                scroll_layer_get_content_size
+                0x00000820                scroll_layer_set_frame
+                0x0000082c                scroll_layer_scroll_up_click_handler
+                0x00000838                scroll_layer_scroll_down_click_handler
+                0x00000844                simple_menu_layer_init
+                0x00000850                simple_menu_layer_get_layer
+                0x0000085c                simple_menu_layer_get_selected_index
+                0x00000868                simple_menu_layer_set_selected_index
+                0x00000874                window_deinit
+                0x00000880                window_set_click_config_provider_with_context
+                0x0000088c                window_get_click_config_provider
+                0x00000898                window_set_window_handlers
+                0x000008a4                window_get_root_layer
+                0x000008b0                window_get_fullscreen
+                0x000008bc                window_set_status_bar_icon
+                0x000008c8                window_is_loaded
+                0x000008d4                window_stack_pop
+                0x000008e0                window_stack_pop_all
+                0x000008ec                window_stack_contains_window
+                0x000008f4                window_stack_get_top_window
+                0x000008fc                window_stack_remove
+                0x00000904                property_animation_init
+                0x0000090c                property_animation_update_int16
+                0x00000914                property_animation_update_gpoint
+                0x0000091c                property_animation_update_grect
+                0x00000924                app_message_register_callbacks
+                0x0000092c                app_message_deregister_callbacks
+                0x00000934                app_message_out_get
+                0x0000093c                app_message_out_send
+                0x00000944                app_message_out_release
+                0x0000094c                app_sync_init
+                0x00000954                app_sync_deinit
+                0x0000095c                app_sync_set
+                0x00000964                app_sync_get
+                0x0000096c                dict_calc_buffer_size
+                0x00000974                dict_write_begin
+                0x0000097c                dict_write_data
+                0x00000984                dict_write_cstring
+                0x0000098c                dict_write_int
+                0x00000994                dict_write_uint8
+                0x0000099c                dict_write_uint16
+                0x000009a4                dict_write_uint32
+                0x000009ac                dict_write_int8
+                0x000009b4                dict_write_int16
+                0x000009bc                dict_write_int32
+                0x000009c4                dict_write_end
+                0x000009cc                dict_read_begin_from_buffer
+                0x000009d4                dict_read_next
+                0x000009dc                dict_read_first
+                0x000009e4                dict_serialize_tuplets
+                0x000009ec                dict_serialize_tuplets_to_buffer
+                0x000009f4                dict_serialize_tuplets_to_buffer_with_iter
+                0x000009fc                dict_write_tuplet
+                0x00000a04                dict_calc_buffer_size_from_tuplets
+                0x00000a0c                dict_merge
+                0x00000a14                dict_find
+                0x00000a1c                action_bar_layer_init
+                0x00000a24                action_bar_layer_set_context
+                0x00000a2c                action_bar_layer_set_click_config_provider
+                0x00000a34                action_bar_layer_set_icon
+                0x00000a3c                action_bar_layer_clear_icon
+                0x00000a44                action_bar_layer_add_to_window
+                0x00000a4c                action_bar_layer_remove_from_window
+                0x00000a54                action_bar_layer_set_background_color
+                0x00000a5c                number_window_init
+                0x00000a64                number_window_set_label
+                0x00000a6c                number_window_set_max
+                0x00000a74                number_window_set_min
+                0x00000a7c                number_window_set_value
+                0x00000a84                number_window_set_step_size
+                0x00000a8c                number_window_get_value
+                0x00000a94                clock_copy_time_string
+ .text          0x00000dc4        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+ .text          0x00000dc4        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .text          0x00000dc4        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.glue_7         0x00000dc4        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000dc4        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000dc4        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000dc4        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.init           0x00000dc4        0xc
+ .init          0x00000dc4        0x4 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+                0x00000dc4                _init
+ .init          0x00000dc8        0x8 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.fini           0x00000dd0        0xc
+ .fini          0x00000dd0        0x4 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+                0x00000dd0                _fini
+ .fini          0x00000dd4        0x8 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.iplt           0x00000ddc        0x0
+ .iplt          0x00000000        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+
+.text.memset    0x00000ddc       0x10
+ .text.memset   0x00000ddc       0x10 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+                0x00000ddc                memset
+
+.data           0x00000dec        0x4
+ *(.data)
+ .data          0x00000dec        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .data          0x00000dec        0x4 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+                0x00000dec                __dso_handle
+ .data          0x00000df0        0x0 src/tiling_test.c.1.o
+ .data          0x00000df0        0x0 /home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test/lib/libpebble.a(tmpE96Sgtpebble_os.o)
+ .data          0x00000df0        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+ .data          0x00000df0        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .data          0x00000df0        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.igot.plt       0x00000df0        0x0
+ .igot.plt      0x00000000        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+
+.got            0x00000df0        0xc
+ .got           0x00000df0        0xc /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+
+.got.plt        0x00000dfc        0xc
+ .got.plt       0x00000dfc        0xc /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+                0x00000dfc                _GLOBAL_OFFSET_TABLE_
+
+.init_array     0x00000e08        0x4
+ .init_array    0x00000e08        0x4 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+
+.fini_array     0x00000e0c        0x4
+ .fini_array    0x00000e0c        0x4 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+
+.jcr            0x00000e10        0x4
+ .jcr           0x00000e10        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .jcr           0x00000e10        0x4 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+
+.bss            0x00000e14       0xe0
+ *(.bss)
+ .bss           0x00000e14        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .bss           0x00000e14       0x1c /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .bss           0x00000e30        0x0 src/tiling_test.c.1.o
+ .bss           0x00000e30        0x0 /home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test/lib/libpebble.a(tmpE96Sgtpebble_os.o)
+ .bss           0x00000e30        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+ .bss           0x00000e30        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .bss           0x00000e30        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+ COMMON         0x00000e30       0xc4 src/tiling_test.c.1.o
+                0x00000e30                IMG_TILE
+                0x00000e74                layer
+                0x00000e9c                window
+
+DISCARD         0x00000ef4        0x4
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+ *(.eh_frame)
+ .eh_frame      0x00000ef4        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .eh_frame      0x00000ef4        0x4 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+OUTPUT(/home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test/build/pebble-app.elf elf32-littlearm)
+
+.rodata         0x00000ef8       0x38
+ .rodata        0x00000ef8       0x38 src/tiling_test.c.1.o
+
+.rel.dyn        0x00000f30        0x0
+ .rel.iplt      0x00000000        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .rel.got       0x00000000        0x0 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+
+.ARM.attributes
+                0x00000000       0x27
+ .ARM.attributes
+                0x00000000       0x1b /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .ARM.attributes
+                0x0000001b       0x2b /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .ARM.attributes
+                0x00000046       0x33 src/tiling_test.c.1.o
+ .ARM.attributes
+                0x00000079       0x21 /home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test/lib/libpebble.a(tmpE96Sgtpebble_os.o)
+ .ARM.attributes
+                0x0000009a       0x2b /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000c5       0x2b /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .ARM.attributes
+                0x000000f0       0x1b /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.comment        0x00000000       0x4e
+ .comment       0x00000000       0x4e /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+                                 0x4f (size before relaxing)
+ .comment       0x00000000       0x4f src/tiling_test.c.1.o
+ .comment       0x00000000       0x4f /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+ .comment       0x00000000       0x4f /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+
+.debug_line     0x00000000      0x28e
+ .debug_line    0x00000000       0x71 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_line    0x00000071      0x1a8 src/tiling_test.c.1.o
+ .debug_line    0x00000219       0x75 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_info     0x00000000     0x1370
+ .debug_info    0x00000000       0x93 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_info    0x00000093     0x124a src/tiling_test.c.1.o
+ .debug_info    0x000012dd       0x93 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_abbrev   0x00000000      0x1f7
+ .debug_abbrev  0x00000000       0x12 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_abbrev  0x00000012      0x1d3 src/tiling_test.c.1.o
+ .debug_abbrev  0x000001e5       0x12 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_aranges  0x00000000       0x70
+ .debug_aranges
+                0x00000000       0x28 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_aranges
+                0x00000028       0x20 src/tiling_test.c.1.o
+ .debug_aranges
+                0x00000048       0x28 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_ranges   0x00000000       0x40
+ .debug_ranges  0x00000000       0x20 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_ranges  0x00000020       0x20 /home/vlemert/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_loc      0x00000000       0xe2
+ .debug_loc     0x00000000       0xe2 src/tiling_test.c.1.o
+
+.debug_str      0x00000000      0xbde
+ .debug_str     0x00000000      0xbde src/tiling_test.c.1.o
+                                0xca4 (size before relaxing)
+
+.debug_frame    0x00000000       0x90
+ .debug_frame   0x00000000       0x90 src/tiling_test.c.1.o

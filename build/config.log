@@ -1,0 +1,18 @@
+# project  configured on Thu Apr 25 21:19:10 2013 by
+# waf 1.7.0 (abi 98, python 20703f0 on linux2)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test
+----------------------------------------
+Setting out to
+/home/vlemert/pebble-dev/pebble-sdk-release-001/my_apps/tiling_test/build
+----------------------------------------
+Checking for program gcc,cc
+arm-none-eabi-gcc
+find program=['gcc', 'cc'] paths='' var='CC' -> 'arm-none-eabi-gcc'
+----------------------------------------
+Checking for program ar
+arm-none-eabi-ar
+find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-ar'
